@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -7,32 +13,67 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  background-color: red;
+  width: auto;
+  height: 55px;
+  color: white;
+  font-size: 14.5px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+header > .globe{
+  font-size: 24px;
+}
+header > p{
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  display: flex;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 550px;
+  height: 100%;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  height: 5px;
+  font-weight: lighter;
+  
+}
+.locationIcon{
+  font-size: 21px;
+}
+.location > h3{
+  font-weight: lighter;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+}
+.card > h1{
+  padding-top: 0;
+}
+
+.card--stats{
+  text-align: start;
+  margin-left: 30px;
+}
+
+.card--description {
+
+
+ size: 10.24px;
 }
